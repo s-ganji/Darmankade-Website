@@ -1,0 +1,390 @@
+/*slideshow*/
+.slideshow_container{
+    display: flex;
+    height: 80vh;
+    width: 90vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.slideshow_container>.slideshow_box{
+    margin: auto;
+    height: 285px;
+    width: 90vw;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+
+}
+.sidebar_container{
+    position: sticky;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 284px;
+    height: 423px;
+    display: block;
+    color: #6e7794;
+    float: right;
+    text-align: right;
+    direction: rtl;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.125);
+    margin-right: 50px;
+}
+.sidebar_flex_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sidebar_flex_container > .item1_sf{
+    width: 100%;
+    padding: 1rem;
+    margin-right: 15px;
+    height: 74px;
+    text-align: right;
+    color: #3b4157;
+    direction: rtl;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: flex-end;*/
+}
+/*.item1_sf > svg{*/
+/*    stroke: #3b4157;*/
+/*}*/
+.span1{
+    font-size: 16px;
+    font-weight: 700 !important;
+    margin-left: .5rem !important;
+    line-height: 1.2;
+}
+.p1{
+    color: #6e7794;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-right: 15px;
+    margin-top: 0;
+}
+
+.sidebar_flex_container > .item2_sf{
+    /*width: 268px;*/
+    height: 340px;
+    /*background-color: #e8c9fd;*/
+    overflow-y: auto;
+    width: 88%;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    /*margin-bottom: 1rem !important;*/
+    margin-top: -10px;
+
+
+}
+.item2_sf > form{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 219px;
+    height: 50px;
+    margin-top: 5px;
+}
+.p_sidebar_item2_input{
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    font-size: 12px;
+    padding-right: 3rem ;
+    width: 80% ;
+    direction: rtl;
+    text-align: right;
+    border: 0 ;
+}
+.p_sidebar_item2_svg{
+    height: 1.2em;
+    width: 1.2em;
+    stroke: #6e7794;
+    right: 5%;
+    bottom: 75%;
+    /*top: 20%;*/
+    position:relative;
+    overflow: hidden;
+    fill: none;
+    stroke-width: 2;
+    vertical-align: middle;
+}
+.item2_sf > ul{
+    height: 3000px;
+    width: 219px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.p_sidebar_item2_li1{
+    height: 300px;
+    width: 100%;
+}
+.p_sidebar_item2_li1 > div{
+    height: 24px;
+    width: 100%;
+    margin-top: 1rem !important;
+    color: #6e7794;
+    text-align: right;
+    direction: rtl;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.p_sidebar_item2_span{
+    width: 35px;
+    height: 33px;
+    background-color: #e5f2fe;
+    border-radius: 5px !important;
+    color: #3b4157;
+    text-align: center !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-bottom: .25rem !important;
+    padding-top: .25rem !important;
+    list-style: none;
+}
+.sidebar_flex_container > .item3_sf{
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    margin-top: -15px;
+    text-align: center;
+    background-color: #e5f2fe;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #1780df;
+    padding: 0 !important;
+    position: sticky;
+    direction: rtl;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+}
+/*لیست تخصص ها*/
+.professions_list_div{
+    float: left;
+    width: 65vw;
+    /*height: 500px;*/
+    margin-left: 50px;
+}
+.professions_list_container{
+    display: grid;
+    grid-template-columns: 246px 246px 246px;
+    grid-template-rows: 265px 265px 265px;
+    justify-content: space-between;
+}
+.professions_list_container > .pl_linkboxes{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    color: #6e7794;
+    border: 1px solid rgba(0,0,0,.125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.pl_linkboxes > .header_pl_boxes{
+    width: 213px;
+    height: 53px;
+    color: #6e7794;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    direction: rtl;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.header_pl_boxes > .img_pl_boxes{
+    width: 53px;
+    height: 53px;
+}
+.header_pl_boxes > .h5_pl_boxes{
+    color: #3b4157;
+    width: 160px;
+    height: 30px;
+    font-weight: 700;
+    padding-right: 1rem;
+    font-size: 18px;
+    line-height: 2px;
+}
+.pl_linkboxes > .pl_p{
+    width: 213px;
+    height: 78px;
+    direction: rtl;
+    line-height: 26px;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    color: #6e7794;
+    margin-top: 0;
+    font-weight: 400;
+
+}
+.pl_linkboxes > .footer_pl_boxes{
+    width: 213px;
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    padding-top: 0;
+
+}
+.footer_pl_boxes > .pic_footer_pl_boxes{
+    width: 106px;
+    height: 49px;
+}
+.pic_footer_pl_boxes >.pic_footer_pl{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.footer_pl_boxes > .footer_pl_btn{
+    margin-bottom: 10px;
+    border: 2px solid #fb815e !important;
+    width: 50%;
+    height: 49px;
+    padding: .375rem .75rem;
+    border-radius: 5px !important;
+    font-size: 14px;
+    font-weight: 700 !important;
+    text-align: right;
+    padding-right: 22px;
+    /*user-select: none;*/
+    color: #fb815e;
+    cursor: pointer;
+}
+a.pl_linkboxes:hover{
+    border-color: #fb815e;
+}
+
+button.footer_pl_btn:hover {
+    background-color: #fb815e;
+    color: white;
+}
+
+/*footer برای صفحات مختلف بجز صفحه اصلی*/
+.footer-plp{
+    height: 264px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1780df;
+    position: relative;
+    top: 15px;
+}
+.footer-plp > .item1-footer-plp{
+    width: 30%;
+    height: 90%;
+    text-align: right;
+    direction: rtl;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-right: 10px;
+
+}
+.footer-plp > .item2-footer-plp{
+    width: 30%;
+    height: 90%;
+    text-align: right;
+    direction: rtl;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-plp > .item3-footer-plp{
+    width: 30%;
+    height: 90%;
+    text-align: right;
+    direction: rtl;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.footer-pl-p{
+    width: 232px;
+    height: 106px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: justify;
+    /*padding-top: 1rem;*/
+    direction: rtl;
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+}
+.item2-footer-plp > ul{
+    width: 144px;
+    height: 122px;
+    list-style-type: none;
+}
+/*.item2-footer-plp > .footer-plp-list2{*/
+/*    width: 144px;*/
+/*    height: 122px;*/
+/*}*/
+.footer-plp-list-item{
+    text-align: center;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    border-top: 1px solid #dee2e6 !important;
+    color: #dee2e6;
+}
+.item3-footer-plp-pics{
+    width: 250px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.item3-footer-plp-pics>img{
+    height: 110px;
+    width: 100px;
+    border-radius: 20px;
+    padding-bottom: .25rem;
+    padding-top: .25rem !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.item3-footer-plp-apps{
+    width: 264px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.item3-footer-plp-apps > a{
+    width: 40px;
+    height: 40px;
+
+}

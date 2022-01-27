@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>درمانکده - مشاوره آنلاین و ویزیت حضوری</title>
+    <link href="main_page.css" type="text/css" rel="stylesheet"/>
+    <link href="doctor_page.css" type="text/css" rel="stylesheet"/>
+    <link href="profession_lists_page.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<!--هدر موجود در همه ی صفحات بجز صفحه ورود-->
+    <header id="head_1" class="header">
+        <!-- Darmankade image-->
+        <div class="d-image" style="order: 7">
+            <a class="d-image-link" href="main_page.html">
+                <img src="https://www.darmankade.com/_nuxt/img/cd3eac7.svg" alt="درمانکده" style="margin-right: 40px">
+            </a>
+        </div>
+        <!-- profession lists-->
+        <div class="p-lists" style="order: 6">
+            <a class="header-lists-links" href="profession_list_page.html">
+                لیست تخصص ها
+                <svg class="p-lists-lines" height="1.5em" width="1.5em">
+                    <line x1="21" y1="10" x2="3" y2="10"></line>
+                    <line x1="21" y1="6" x2="3" y2="6"></line>
+                    <line x1="21" y1="14" x2="3" y2="14"></line>
+                    <line x1="21" y1="18" x2="3" y2="18"></line>
+                </svg>
+            </a>
+        </div>
+<!--        مشاوره آنلاین-->
+        <div class="c-list" style="order: 5">
+            <a class="header-lists-links" >
+                لیست مشاوره آنلاین
+                <svg class="pathes" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                    <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                    <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                    <line x1="12" y1="20" x2="12" y2="20"></line>
+                </svg>
+            </a>
+        </div>
+<!--مجله پزشکی-->
+        <div class="m-magazine" style="order: 4">
+            <a class="header-lists-links">
+                مجله پزشکی
+                <svg class="pathes" height="1.8em" width="1.8em">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+            </a>
+        </div>
+<!--       عضویت پزشکان-->
+        <div class="m-doctors" style="order: 3">
+            <a class="header-lists-links">
+                عضویت پزشکان
+                <svg class="pathes" height="1.5em" width="1.5em">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" data-v-49015c94=""></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <line x1="20" y1="8" x2="20" y2="14" ></line>
+                    <line x1="23" y1="11" x2="17" y2="11" ></line>
+                </svg>
+            </a>
+        </div>
+<!--       کرونا سیستمی-->
+        <div class="o-corona" style="order: 2">
+            <a class="header-lists-links">
+                کرونا سازمانی
+                <svg class="pathes" height="1.5em" width="1.5em">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" ></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+            </a>
+        </div>
+<!--        ورود-->
+        <div class="enter" style="flex-grow: 8;align-self: flex-start;order: 1;">
+            <a class="e-link"  id="e-link" >
+                <svg class="e-pathes" height="24px" width="24px" stroke-width="2">
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" ></path>
+                    <polyline points="10 17 15 12 10 7"></polyline>
+                    <line x1="15" y1="12" x2="3" y2="12"></line>
+                </svg>
+                ورود
+            </a>
+        </div>
+    </header>
+<!--search bar-->
+    <div class="search-box-container">
+        <div class="search-box">
+            <h1 class="h1-search-box" id="header_search">
+                درمانکده - مشاوره آنلاین و حضوری
+            </h1>
+            <form class="search-bar" action="search_main_get_dinf.php" method="GET">
+                <button class="btn-for-search" type="submit" >
+                    جستجو
+                </button>
+                <div class="search-pathes_div">
+                <svg class="search-pathes" width="1.2em" height="1.2em">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                </div>
+                <input class="city-select"  type="text" readonly="readonly" value="تهران" placeholder="نام شهر را انتخاب کنید">
+                <div class="search-pathes_div">
+                <svg class="search-pathes" height="1.8em" width="1.8em" style="margin-left: 3px;">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                </div>
+                <input class="sb-search" value="" id="search_main" name="search_main" type="text" placeholder="نام پزشک، تخصص، یا محله مورد نظر را جستجو کنید.">
+
+            </form>
+        </div>
+    </div>
+
+<!--بهترین تخصص های درمانکد-->
+<div class="bp_container">
+       <h5 class="h5_bp_class">
+               بهترین تخصص های درمانکده
+       </h5>
+<!--        مشاهده همه-->
+        <div class="see_all_div">
+        <a class="see_all_link" id="see_all_link">
+            <svg class="see_all_svg" height="24px" width="24px" >
+                <polyline points="15 18 9 12 15 6" ></polyline>
+            </svg>
+            مشاهده همه
+        </a>
+        </div>
+        <!--ortopedi-->
+        <a class="icon_link" id="icon_link" style="grid-area: 2/7/2/7;" >
+            <div class="icon_div" style="background-color: #e8c9fd;">
+                <img class="icon_img" src="p_lists/ortopedi.png" alt="ارتوپدی">
+            </div>
+            <p class="icon_p">
+                ارتوپدی
+            </p>
+        </a>
+
+        <!--orology-->
+        <a class="icon_link" style="grid-area: 2/6/2/6;" id="icon_link2">
+            <div class="icon_div" style="background-color: #fcbaba;">
+                <img class="icon_img" src="p_lists/orology.png" alt="اورولوژی">
+            </div>
+            <p class="icon_p">
+                اورولوژی
+            </p>
+        </a>
+
+        <!--poost va ..-->
+        <a class="icon_link" style="grid-area: 2/5/2/5;" id="icon_link3">
+            <div class="icon_div" style="background-color: #b3e8ca;">
+                <img class="icon_img" src="p_lists/poostmoo.png" alt="پوست و مو">
+            </div>
+            <p class="icon_p">
+                پوست و مو
+            </p>
+        </a>
+
+        <!--zanan-->
+        <a class="icon_link" style="grid-area: 2/4/2/4;" id="icon_link4">
+            <div class="icon_div" style="background-color: #abc2d8;">
+                <img class="icon_img" src="p_lists/zanan.png" alt="زنان و زایمان">
+            </div>
+            <p class="icon_p">
+                زنان و زایمان
+            </p>
+        </a>
+
+        <!--dakheli-->
+        <a class="icon_link" style="grid-area: 2/3/2/3;" id="icon_link5">
+            <div class="icon_div" style="background-color: #fbcbee;">
+                <img class="icon_img" src="p_lists/dakheli.png" alt="داخلی">
+            </div>
+            <p class="icon_p">
+                داخلی
+            </p>
+        </a>
+
+        <!--gush o ...-->
+        <a class="icon_link" style="grid-area: 2/2/2/2;" id="icon_link6">
+            <div class="icon_div" style="background-color: #c5e1fb;">
+                <img class="icon_img" src="p_lists/gush.png" alt="گوش،حلق و بینی">
+            </div>
+            <p class="icon_p">
+                گوش،حلق و بینی
+            </p>
+        </a>
+
+        <!--maqz o ...-->
+        <a class="icon_link" style="grid-area: 2/1/2/1;" id="icon_link7">
+            <div class="icon_div" style="background-color: #fbcbee;">
+                <img class="icon_img" src="p_lists/maqz.png" alt="مغز و اعصاب">
+            </div>
+            <p class="icon_p">
+                مغز و اعصاب
+            </p>
+        </a>
+    </div>
+
+<!--    نظرات و روند درمانی کاربران-->
+    <div class="p_opinion">
+        <div class="div_nazarat" >
+            <h4 class="p_opinion_h4">
+                نظرات و روند درمانی بیماران
+            </h4>
+            <p class="p_opinion_p" style="direction: rtl">
+                شما می توانید تجربه مراجعه کاربران دیگر به پزشکان را بخوانید و از علت مراجعه سایر بیماران  و روند درمانی آن ها آگاهی یابید.
+            </p>
+        </div>
+        <div class="openion_box">
+            <img class="cama_icon" src="p_lists/cama.png" alt="گیومه">
+            <div class="openion_box_div">
+                <p>
+                    خیلی خانم خوش اخلاقی هست من بار اولمه باهاش برخورد کردم خیلی خوشم اومد از اخلاقش اخه من با دکترای زیادی سروکار دارم مثل خانم تهرانی ندیدم تا حالا به مطبش نرفتم داخل بیمارستان زیارنش کردم سایت درمانکده هم عالی بود من راحت نوبت گرفتم
+                </p>
+                <div class="openion_box_div_bottom">
+                    <img src="p_lists/tehrani.jpg">
+                    <div>
+                        <h4 class="openion_box_div_bottom_h4">                                            دکتر خدیجه تهرانی
+                        </h4>
+                        <p class="openion_box_div_bottom_p">متخصص مغز و اعصاب(نورولوژی)</p>
+                    </div>
+                    <a class="openion_box_div_bottom_a">
+                    مشاهده سایر نظرات
+                    </a>
+                </div>
+            </div>
+            <div class="after_openion_users">
+            </div>
+            <div class="hoop_users_op" style="position: relative; left:25%;bottom: 10%;">
+                <ol class="hoop_users_op_list">
+                    <li>
+                        <button class="hoop_users_op_btn">
+                            <!--                                                <span class="hooper-sr-only">item 0</span>-->
+                        </button>
+                    </li>
+                    <li>
+                        <button class="hoop_users_op_btn" style="background-color: #1780df;">
+                            <!--                                                <span class="hooper-sr-only">item 1</span>-->
+                        </button>
+                    </li>
+                    <li>
+                        <button class="hoop_users_op_btn">
+                            <!--                                                <span class="hooper-sr-only">item 2</span>-->
+                        </button>
+                    </li>
+                    <li>
+                        <button class="hoop_users_op_btn">
+                            <!--                                                <span class="hooper-sr-only">item 3</span>-->
+                        </button>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+<!--خدمات ویژه-->
+    <div class="special-service">
+        <h5 class="sp_s_h5">
+            نگران کرونا نباشید
+        </h5>
+        <div class="container_in_sp">
+            <a class="RCR_test_container">
+                <img src="p_lists/RCR.png" alt="تست RCR" class="rcr_img">
+                <h4 class="rcr_h4">
+                    تست RCR و آنتی بادی در محل
+                </h4>
+                <p class="rcr_p">
+                    اگر در شهرهای تهران، مشهد، اصفهان، کرج، شیراز و اهواز هستید، می‌توانید بدون مراجعه به آزمایشگاه و در محل مدنظر خود آزمایش کرونا بدهید.
+                </p>
+                <div class="rcr_orangebox">
+                    درخواست آزمایش
+                    <svg class="sps_svg" width="24px" height="24px">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+            <a class=" mosh_online_container">
+                <img src="p_lists/moshavere.png" alt="مشاوره آنلاین" class="mo_img">
+                <h4 class="mo_h4">
+                    مشاوره آنلاین فوری
+                </h4>
+                <p class="mo_p">
+                    با تست آنلاین کرونا علائم خود را بررسی کنید و اگر مشکوک بودید میتوانید به صورت فوری با پزشکان عمومی مشاوره آنلاین داشته باشید.
+                </p>
+                <div class="mo_orangebox">
+                    دریافت مشاوره فوری
+                    <svg class="sps_svg" width="24px" height="24px">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+<!--    دانلود اپلیکیشن-->
+    <div class="app_download_container">
+        <div class="ad_text_container">
+            <h5 class="ad_text_h5">
+                دانلود اپلیکیشن درمانکده
+            </h5>
+            <p class="ad_text_p">
+                با اپلیکیشن درمانکده با پزشکان و روانشناسان آنلاین مشاوره کنید یا برای ویزیت حضوری آنلاین نوبت بگیرید.
+            </p>
+            <p class="ad_text_p2">
+                برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.
+            </p>
+            <div class="send_link_container">
+
+                <div class="send_link_btn">
+                    <div class="send_btn_text" >
+                        ارسال لینک
+                    </div>
+                    <div class="btn_before">
+                        <svg class="sps_svg" height="2em" width="2em" style="padding-top: 12px;padding-left: 20px">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="11" y1="19" x2="14" y2="19" style="stroke:white;stroke-width:2"/>
+                        </svg>
+                    </div>
+
+                </div>
+                <input class="phone_number" placeholder="مانند  ******* 0912  " value="" required="required">
+            </div>
+        </div>
+        <a class="ad_pic_container">
+            <img src="p_lists/appbanner.png" alt="app banner" class="ad_pic_img">
+            <div class="ad_pic_apps_icons">
+                <img src="p_lists/icon1_ad.png" alt="ios" >
+                <img src="p_lists/icon2_ad.png" alt="ios" >
+                <img src="p_lists/icon3_ad.png" alt="bazaar">
+            </div>
+        </a>
+    </div>
+<!--footer-->
+    <div class="footer_container">
+        <a class="dar_pic_inf">
+            <img src="p_lists/footerPic.svg" alt="درمانکده" >
+        </a>
+        <p class="footer_p">
+            درمانکده، ارائه دهنده خدمات آنلاین سلامت
+            <br>
+            (نوبت گیری اینترنتی، مشاوره آنلاین، آزمایش در محل و ...)
+        </p>
+        <div class="con_in_footer">
+            <div class="con_in_footer_item1">
+                    <ul>
+                        <li class="footer-plp-list-item">
+                            <a>
+                                درباره درمانکده
+                            </a>
+                        </li>
+                        <li class="footer-plp-list-item">
+                            <a>
+                               تماس با ما
+                            </a>
+                        </li>
+                        <li class="footer-plp-list-item">
+                            <a>
+                                مجله پزشکی
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="con_in_footer_item2">
+                <div class="item3-footer-plp-apps" style="margin-top: 10px;">
+                    <a>
+                        <svg class="sps_svg" width="40px" height="40px" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" data-v-95a34f4e=""></path>
+                            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" data-v-95a34f4e=""></line>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg class="sps_svg" width="40px" height="40px" stroke-width="2">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" data-v-95a34f4e=""></line>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg class="sps_svg" width="40px" height="40px" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" data-v-95a34f4e=""></path>
+                            <rect x="2" y="9" width="4" height="12" ></rect>
+                            <circle cx="4" cy="4" r="2" ></circle>
+                        </svg>
+                    </a>
+                </div>
+                <div style="height: 55%;width: 1px;margin-left: auto ;margin-right: auto !important;margin-top:-10px;background-color: #fff !important;"></div>
+            </div>
+            <div class="con_in_footer_item1">
+                <ul>
+                    <li class="footer-plp-list-item">
+                        <a>
+                            سوالات متداول
+                        </a>
+                    </li>
+                    <li class="footer-plp-list-item">
+                        <a>
+                            قوانین و مقررات
+                        </a>
+                    </li>
+                    <li class="footer-plp-list-item">
+                        <a>
+                            شکایت
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer_p" style="width: 376px">
+            با ثبت‌نام در خبرنامه درمانکده، اولین نفری باشید که از جدیدترین خبرها، جشنواره‌ها و تخفیف های ویژه ما مطلع می‌شوید
+        </p>
+        <div class="name_family_in">
+            <input class="name_input_footer" type="text" placeholder="نام" name="FirstName" value="">
+            <input class="name_input_footer" type="text" placeholder="نام خانوادگی" name="lastName" value="">
+        </div>
+
+        <input class="email_in" type="text" name="email" placeholder="ایمیل" value="">
+        <div class="participate_btn">
+            <div>
+                عضو می شوم
+            </div>
+            <div class="footer_btn_before">
+            <svg class="sps_svg" height="1.3em" width="1.3em" style="margin-left: 10px;margin-top: 10px;">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5" ></polyline>
+            </svg>
+            </div>
+        </div>
+        <div class="footer_pic">
+            <img src="https://logo.samandehi.ir/logo.aspx?id=1020917&p=nbpdlymaodrflymabsiynbpdyndt" alt="logo-samandehi" style="width: 50%;height: 100%;cursor: pointer;">
+            <img src="https://Trustseal.eNamad.ir/logo.aspx?id=107984&Code=TIxyyDUwLE22aX96fu2X" alt="enamed" style="width: 50%;height: 100%;cursor: pointer;">
+        </div>
+    </div>
+<script src="changePages.js"></script>
+<script src="search_main.js"></script>
+
+
+</body>
+</html>

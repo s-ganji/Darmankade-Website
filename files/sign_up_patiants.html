@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ورود</title>
+    <link href="main_page.css" type="text/css" rel="stylesheet"/>
+    <link href="profession_lists_page.css" type="text/css" rel="stylesheet"/>
+    <link href="doctor_page.css" type="text/css" rel="stylesheet"/>
+    <link href="doctors_list_page.css" type="text/css" rel="stylesheet"/>
+    <link href="login_page.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="login_page_sidebar">
+    <div class="login_page_sidebar_div">
+        <img src="p_lists/footerPic.svg" alt="درمانکده" style="width: 198px;height: 85px;">
+        <h4>
+            به درمانکده خوش آمدید
+        </h4>
+        <h5>نوبت دهی آنلاین مطب پزشکان</h5>
+    </div>
+</div>
+<div class="login_page_left">
+    <form class="login_page_left_div" style="margin-top: -200px;" action="logsign_page_patients.php" method="get">
+        <div class="login_page_left_div_top" style="margin-bottom: 50px;">
+            <h5>
+                برای ثبت نام نام کاربری، کلمه عبور و شماره همراه خود را وارد کنید.
+            </h5>
+            <div>
+                <lable class="login_page_input_phone_number_lable">
+                    نام کاربری
+                </lable>
+                <div class="login_page_input_phone_number_box">
+                    <input maxlength="12" value="" name="username" type="text" >
+                </div>
+            </div>
+        </div>
+        <div class="login_page_left_div_top" style="padding-bottom: -10px;">
+            <div >
+                <lable class="login_page_input_phone_number_lable">
+                    کلمه عبور
+                </lable>
+                <div class="login_page_input_phone_number_box">
+                    <input maxlength="12" value="" type="text" name="password">
+                </div>
+            </div>
+        </div>
+        <div class="login_page_left_div_top" style="margin-top: -10%" >
+            <div>
+                <lable class="login_page_input_phone_number_lable">
+                    شماره تلفن
+                </lable>
+                <div class="login_page_input_phone_number_box">
+                    <input maxlength="12" value="" type="text" name="phone">
+                </div>
+            </div>
+        </div>
+        <button class="login_page_btn" name="signup_p" type="submit" style="margin-top: -30px;" >
+            ثبت نام
+            <svg viewBox="0 0 24 24" style="margin-right:5px;height: 1.5em;width: 1.5em;fill: none;stroke-width: 2;vertical-align: middle;stroke: white;">
+                <polyline data-v-64f32286="" points="11 17 6 12 11 7"></polyline>
+                <polyline data-v-64f32286="" points="18 17 13 12 18 7"></polyline>
+            </svg>
+        </button>
+
+    </form>
+</div>
+<script src="changePages.js"></script>
+</body>
+</html>

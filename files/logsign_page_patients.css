@@ -1,0 +1,39 @@
+*{
+    font-family: "Vazir FD-WOL";
+}
+.edit_patients_informations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.edit_patients_informations >#username_patients_div{
+    height: 50px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+    text-align: center;
+    direction: rtl;
+    /*padding-top: 30px;*/
+    margin-top: 50px;
+    border: 0px;
+    line-height: 0.5rem;
+    font-size: 1rem;
+    color: black;
+}
+#edit_patients_but{
+    height: 30px;
+    width: 10%;
+    background-color: #abc2d8;
+    cursor: pointer;
+    margin-top: 30px;
+}
+#username_edit_p{
+    height: 40px;
+    width: 100px;
+    background-color: #abc2d8;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
