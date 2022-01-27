@@ -1,5 +1,6 @@
 # Darmankade-Website
-Implementation of a website with features and facilities similar to www.darmankade.com website, Web Programming final course project, Fall 2020
+Implementation of a website with features and facilities similar to www.darmankade.com website, Web Programming final course project, Fall 2020 <br/>
+This project was completed in 3 phases:
 ## Phase 1 
 In this phase, HTML and CSS should be used to implement the appearance of home page (صفحه اصلی), specialty list page(صفحه لیست تخصص ها), doctor list page (صفحه لیست پزشکان), each doctor-specific page(صفحه اختصاصی هر پزشک) and login page (صفحه ورود ).
 ## Phase 2
