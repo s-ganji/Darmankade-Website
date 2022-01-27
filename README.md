@@ -15,3 +15,4 @@ A doctor should be able to do followings:
 - the ability to register and enter the system
 - the ability to see his private information and Shifts reserved by patients in a page
 
+.
